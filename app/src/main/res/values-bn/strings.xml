@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Zaura</string>
+    <string name="omnibox_placeholder">ওয়েব ঠিকানা লিখুন বা অনুসন্ধান করুন…</string>
+    <string name="omnibox_ai_placeholder">Zaura AI কে জিজ্ঞাসা করুন বা ওয়েবে খুঁজুন…</string>
+    <string name="action_new_tab">নতুন ট্যাব</string>
+    <string name="action_new_private_tab">নতুন গোপন ট্যাব</string>
+    <string name="action_close_tab">ট্যাব বন্ধ করুন</string>
+    <string name="action_close_all_tabs">সব ট্যাব বন্ধ করুন</string>
+    <string name="action_reload">পুনরায় লোড করুন</string>
+    <string name="action_stop">থামুন</string>
+    <string name="action_forward">সামনে</string>
+    <string name="action_back">পেছনে</string>
+    <string name="action_home">হোম</string>
+    <string name="action_tabs">ট্যাবসমূহ</string>
+    <string name="action_bookmarks">বুকমার্কসমূহ</string>
+    <string name="action_history">ইতিহাস</string>
+    <string name="action_downloads">ডাউনলোডসমূহ</string>
+    <string name="action_settings">সেটিংস</string>
+    <string name="action_share">শেয়ার করুন</string>
+    <string name="action_find_in_page">পৃষ্ঠায় খুঁজুন</string>
+    <string name="action_reader_mode">রিডার মোড</string>
+    <string name="action_ask_ai">Zaura AI কে জিজ্ঞাসা করুন</string>
+    <string name="action_summarize">পৃষ্ঠার সারসংক্ষেপ</string>
+    <string name="action_translate">পৃষ্ঠা অনুবাদ করুন</string>
+    <string name="action_research">গভীর গবেষণা</string>
+    <string name="action_compare_tabs">নির্বাচিত ট্যাব তুলনা করুন</string>
+    <string name="action_desktop_site">ডেস্কটপ সাইট</string>
+    <string name="action_privacy_dashboard">প্রাইভেসি শিল্ড</string>
+    <string name="action_clear_browsing_data">ব্রাউজিং ডেটা সাফ করুন</string>
+    <string name="search_web">ওয়েব</string>
+    <string name="search_news">সংবাদ</string>
+    <string name="search_images">ছবি</string>
+    <string name="search_videos">ভিডিও</string>
+    <string name="ai_answer_title">Zaura AI উত্তর</string>
+    <string name="ai_sources_title">উৎস এবং তথ্যসূত্র</string>
+    <string name="ai_ask_followup">একটি ফলো-আপ প্রশ্ন করুন…</string>
+</resources>

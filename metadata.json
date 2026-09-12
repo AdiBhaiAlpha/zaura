@@ -1,0 +1,6 @@
+{
+  "name": "Zaura",
+  "description": "AI-native, privacy-focused Chromium Android browser with intelligent search and research workspace",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
