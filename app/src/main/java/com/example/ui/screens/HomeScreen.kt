@@ -92,17 +92,18 @@ fun HomeScreen(
     ) {
         Spacer(modifier = Modifier.height(20.dp))
 
-        // 1. Small Clean Zaura Branding (canonical ic_launcher.png as sole source of truth)
+        // 1. Small Clean Zaura Branding
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.mipmap.ic_launcher),
+                painter = painterResource(id = R.mipmap.ic_launcher_foreground),
                 contentDescription = "Zaura",
                 modifier = Modifier
                     .size(36.dp)
                     .clip(RoundedCornerShape(8.dp))
+                    .background(MaterialTheme.colorScheme.primaryContainer)
             )
             Spacer(modifier = Modifier.width(10.dp))
             Text(
