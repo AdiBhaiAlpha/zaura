@@ -21,10 +21,10 @@ object OpenRouterConfig {
     const val HARDCODED_OPENROUTER_API_KEY = ""
 
     // Default primary model (Routed strictly through OpenRouter)
-    const val DEFAULT_PRIMARY_MODEL = "google/gemini-2.0-flash-001"
+    const val DEFAULT_PRIMARY_MODEL = "google/gemma-4-26b-a4b-it:free"
 
     // Default fallback model (OpenRouter free tier auto-routing)
-    const val DEFAULT_FALLBACK_MODEL = "openrouter/free"
+    const val DEFAULT_FALLBACK_MODEL = "google/gemma-4-26b-a4b-it:free"
 
     // OpenRouter Attribution Headers
     const val HEADER_HTTP_REFERER = "HTTP-Referer"
@@ -51,18 +51,11 @@ object OpenRouterConfig {
 
     val CURATED_MODELS: List<ModelDescriptor> = listOf(
         ModelDescriptor(
-            id = "google/gemini-2.0-flash-001",
-            displayName = "Gemini 2.0 Flash (via OpenRouter)",
-            isFree = false,
-            providerBadge = "Fast & Multimodal",
-            description = "High-speed reasoning and synthesis routed via OpenRouter gateway."
-        ),
-        ModelDescriptor(
-            id = "openrouter/free",
-            displayName = "OpenRouter Free Auto-Router",
+            id = "google/gemma-4-26b-a4b-it:free",
+            displayName = "Google Gemma 4 26B (Free)",
             isFree = true,
-            providerBadge = "Free Tier",
-            description = "Dynamically routes to currently available top free models."
+            providerBadge = "Google / Free",
+            description = "Google's Gemma 4 26B parameter model routed via OpenRouter."
         ),
         ModelDescriptor(
             id = "meta-llama/llama-3.3-70b-instruct:free",

@@ -26,7 +26,7 @@ import java.util.concurrent.atomic.AtomicLong
  * - Base endpoint: https://openrouter.ai/api/v1
  * - Chat endpoint: https://openrouter.ai/api/v1/chat/completions
  * - OpenAI-compatible chat completion payload
- * - Model fallback (primary -> openrouter/free)
+ * - Model fallback (primary -> google/gemma-4-26b-a4b-it:free)
  * - Server-Sent Events (SSE) streaming support
  * - Attributed headers (HTTP-Referer, X-Title)
  * - Transparent error handling without vendor leakage
