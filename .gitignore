@@ -14,8 +14,6 @@ app/build/
 *.class
 *.keystore
 *.keystore.base64
-debug.keystore
-debug.keystore.base64
 .build-outputs/
 **/.build-outputs/
 .kotlin/
