@@ -13,6 +13,10 @@ import com.example.ui.browser.BrowserScreen
 import com.example.ui.browser.BrowserViewModel
 import com.example.ui.theme.MyApplicationTheme
 
+/**
+ * Main entry point for the Zaura Browser application.
+ * Manages the top-level Activity lifecycle and handles incoming web intents.
+ */
 class MainActivity : ComponentActivity() {
 
     private var browserViewModelRef: BrowserViewModel? = null

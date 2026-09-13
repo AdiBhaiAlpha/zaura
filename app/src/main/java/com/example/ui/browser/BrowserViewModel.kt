@@ -105,16 +105,22 @@ class BrowserViewModel(application: Application) : AndroidViewModel(application)
         .writeTimeout(60, TimeUnit.SECONDS)
         .build()
 
-    private fun getOpenRouterKey(): String? {
+    private fun getOpenRouterKey(): String {
         val custom = _uiState.value.customOpenRouterApiKey
         if (!custom.isNullOrBlank()) return custom
-        return try {
+        val envKey = try {
             val field = BuildConfig::class.java.getField("OPENROUTER_API_KEY")
             val raw = field.get(null) as? String
             if (raw.isNullOrBlank() || raw == "OPENROUTER_API_KEY_PLACEHOLDER") null else raw
         } catch (_: Exception) {
             null
         }
+        val sysEnv = try {
+            System.getenv("OPENROUTER_API_KEY")?.ifBlank { null }
+        } catch (_: Exception) {
+            null
+        }
+        return envKey ?: sysEnv ?: OpenRouterConfig.HARDCODED_OPENROUTER_API_KEY
     }
 
     val openRouterProvider = OpenRouterProvider(

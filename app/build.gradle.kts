@@ -1,3 +1,5 @@
+import java.util.Base64
+
 plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.kotlin.compose)
@@ -18,6 +20,17 @@ android {
     versionName = "1.0"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+  }
+
+  val debugKeystoreFile = file("${rootDir}/debug.keystore")
+  val debugKeystoreBase64File = file("${rootDir}/debug.keystore.base64")
+  if (!debugKeystoreFile.exists() && debugKeystoreBase64File.exists()) {
+    try {
+      val decodedBytes = Base64.getDecoder().decode(debugKeystoreBase64File.readText().trim())
+      debugKeystoreFile.writeBytes(decodedBytes)
+    } catch (e: Exception) {
+      logger.warn("Failed to restore debug.keystore: ${e.message}")
+    }
   }
 
   signingConfigs {
